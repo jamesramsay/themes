@@ -1,4 +1,29 @@
-t.prefs_.set('color-palette-overrides',["#282a36", "#34353e", "#43454f", "#78787e", "#a5a5a9", "#e2e4e5", "#eff0eb", "#f1f1f0", "#ff5c57", "#ff9f43", "#f3f99d", "#5af78e", "#9aedfe", "#57c7ff", "#ff6ac1", "#b2643c"]);
-t.prefs_.set('foreground-color', "#eff0eb");
-t.prefs_.set('background-color', "#282a36");
-t.prefs_.set('cursor-color', '#97979b');
+var foregroundColor = '#eff0eb';
+var backgroundColor = '#282a36';
+var red             = '#ff5c57';
+var green           = '#5af78e';
+var yellow          = '#f3f99d';
+var blue            = '#57c7ff';
+var magenta         = '#ff6ac1';
+var cyan            = '#9aedfe';
+var white           = '#f1f1f0';
+
+var black       = backgroundColor;
+var lightBlack  = '#686868';
+var lightRed    = red
+var lightGreen  = green
+var lightYellow = yellow
+var lightBlue   = blue
+var lightMagenta= magenta
+var lightCyan   = cyan
+var lightWhite  = foregroundColor;
+
+t.prefs_.set('color-palette-overrides',
+                 [ black    , red         , green     , yellow,
+                  blue      , magenta     , cyan      , white,
+                  lightBlack, lightRed    , lightGreen, lightYellow,
+                  lightBlue , lightMagenta, lightCyan , lightWhite ]);
+
+t.prefs_.set('cursor-color', '9#7979b');
+t.prefs_.set('foreground-color', foregroundColor);
+t.prefs_.set('background-color', backgroundColor);
